@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+- Sessions provide a way to persevere data across requests. We’ll use them to persevere authentication information, so there is no need to re-enter credentials on every new request the client makes to the server.
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+- Bcrypt allows us to cryptographically code passwords, using a secret key and with the HMACSHA-256 algorithm.
 
 - [ ] What does bcrypt do to slow down attackers?
 
+- Bcrypt makes it difficult for attackers to use brute force tactics to guess passwords because it’s a slow algorithm that would make it difficult to run thousands of iterations of.
+
 - [ ] What are the three parts of the JSON Web Token?
+
+- The three parts of the JWT are the payload (data of the token), the secret string which is used to encrypt and decrypt it, and the options which specify attributes such as the expiration time.
 
 ## Minimum Viable Product
 
