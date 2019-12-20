@@ -38,7 +38,7 @@ router.post('/login', (req, res) => {
         }
         })
         .catch(error => {
-        res.status(500).json({err: error, message: "there was an error"});
+        res.status(500).json({message: "there was an error"});
         });
 });
 
